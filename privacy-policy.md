@@ -1,32 +1,51 @@
 Privacy Policy
-Last Updated: 12/03/2025
+Last Updated: 04/04/2025
 
-1. Introduction
+Introduction
 Thank you for choosing Open Excel (“the Extension”). This Privacy Policy explains how we handle any information collected or processed through the Extension.
 
-2. Data Collection and Usage
-Local-Only File Processing: The Extension processes Excel files (.xls, .xlsx) locally in your browser. The data does not leave your device.
+Data Collection and Usage
+
+Local-Only File Processing (Default): By default, the Extension processes Excel files locally in your browser. Your data never leaves your device unless you choose to upload it.
+
+Optional Google Drive Upload: If you use the “Edit in Google Sheets” feature, the file will be uploaded to your own Google Drive for editing. We do not collect or store the contents of the file ourselves.
+
 No Personal Data Collection: We do not collect, store, or share personal information such as names, email addresses, or browsing history.
-Temporary Storage Permission: We use Chrome’s local storage to temporarily store file data to display the spreadsheet. The data is removed once you close the tab or load a new file.
-Tabs Permission: We use this permission to open and manage new tabs for an enhanced viewing experience. We do not read or store your browsing history.
-3. Third-Party Services
-SheetJS Library: The Extension uses the open-source library xlsx.full.min.js locally packaged within the Extension. This library does not transmit user data to external services.
-No Remote Code Execution: All scripts and resources are bundled with the Extension. We do not load or inject code from external URLs.
-4. Disclosure of Information
+
+Temporary Storage: We use Chrome’s local storage to temporarily store file data for display. The data is removed once you close the tab or load a new file.
+
+Third-Party Services
+
+SheetJS Library: The Extension includes a local copy of the open-source library xlsx.full.min.js. This library does not transmit user data to external servers.
+
+Google APIs: When you choose “Edit in Google Sheets,” the Extension uses Google OAuth to upload the spreadsheet to your Google Drive. This upload is authorized solely by your Google account, and the Extension does not access other files or personal data beyond this one-time upload.
+
+Disclosure of Information
+
 We do not sell, trade, or otherwise transfer user data to third parties.
-We do not share user data with any external service or advertising platform.
-5. Data Security
-Since data is processed locally on your device, your files remain private.
-We adhere to Google Chrome’s content security policies to ensure data safety.
-6. Your Choices
-Uninstallation: You can remove the Extension at any time from Chrome. Once removed, we no longer have access to local storage or permission to open tabs on your device.
-7. Compliance with Laws
+
+We do not share user data with any external advertising platform.
+
+Data Security
+
+Local Processing: In normal usage, your files remain on your device and are not sent anywhere.
+
+Secure Authorization: If you choose to upload the file to Google Drive, Google OAuth is used to authorize that action. The Extension does not store your Google credentials.
+
+Content Security Policy: We adhere to Google Chrome’s content security policies for data safety.
+
+Your Choices
+
+Use Without Uploading: You can simply view Excel files without using the “Edit in Google Sheets” feature.
+
+Uninstallation: You can remove the Extension at any time from Chrome. Once removed, we no longer have access to any local storage or permissions on your device.
+
+Compliance with Laws
 We comply with all applicable laws and regulations regarding data protection and privacy, including the Chrome Web Store Developer Program Policies.
 
-8. Changes to This Policy
+Changes to This Policy
 We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Last Updated” date.
 
-9. Contact Us
+Contact Us
 If you have any questions or concerns about this Privacy Policy or the Extension’s data practices, please contact us at: alx.hnld@gmail.com
 
-This Privacy Policy aims to clearly communicate how your Extension handles user data, meets Chrome Web Store requirements, and respects user privacy. Make sure to review and update the details to match your specific practices and legal obligations.
