@@ -1,3 +1,5 @@
+>📂 [Open Excel](https://chromewebstore.google.com/detail/open-excel/iocnoabndkjippckmjbglgdecdldcnjb) – install on the official Chrome Web Store (FREE)
+
 🔍 View & edit Excel Easily
 
 Open Excel is a fast and lightweight Chrome extension that allows you to view and edit Excel files (.xls, .xlsx) directly in your browser—no additional software needed! Simply drag and drop your file or select it from your computer to start working with spreadsheets instantly.
