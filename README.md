@@ -1,25 +1,45 @@
 >📂 [Open Excel](https://chromewebstore.google.com/detail/open-excel/iocnoabndkjippckmjbglgdecdldcnjb) – install on the official Chrome Web Store (FREE)
 
-🔍 View & edit Excel Easily
+Open Excel is a fast, lightweight Excel viewer and editor for Chrome. Open .xlsx and .xls files directly in your browser—no Microsoft Excel required. Enable free editing with Google or Email OTP.
 
-Open Excel is a fast and lightweight Chrome extension that allows you to view and edit Excel files (.xls, .xlsx) directly in your browser—no additional software needed! Simply drag and drop your file or select it from your computer to start working with spreadsheets instantly.
+✔ What you can do
 
-🔹 Key Features:
-✔️ Instant Excel File Viewer – Open .xls and .xlsx files in Chrome without installing Microsoft Excel.
-✔️ Edit file in Google Sheets.
-✔️ Drag & Drop Support – No complicated settings, just drop your file and view it.
-✔️ Multi-Sheet Navigation – Easily switch between different sheets.
-✔️ Adjustable Zoom – Scale your spreadsheet for better readability.
-✔️ Save as PDF – Print or export your Excel sheet as a PDF.
+ ✦  Open Excel files instantly (drag & drop or select a file)
+ ✦  View multi-sheet workbooks and zoom for comfortable reading
+ ✦  Edit Excel inside the extension after you enable editing
+ ✦  Save locally so your edits are available when you reopen the file from Recent
+ ✦  Download as .xlsx or Print / Save as PDF via your browser
+ ✦  Optionally open in Google Sheets for online editing and sharing
 
-🛠 How It Works:
-1️⃣Click the Open Excel extension icon.
-2️⃣Select an Excel file or drag and drop it into the viewer.
-3️⃣Switch between multiple sheets and zoom it.
-4️⃣Click Save as PDF to export your file.
-5️⃣Click "Edit in Google Sheets" to securely upload your file for editing.
+✍️ Enable Edit (free)
 
-🔍 Why Choose Open Excel?
-Open Excel is fast, private, and secure. By default, your data never leaves your device: it’s processed locally in your browser. If you choose to use the “Edit in Google Sheets” feature, the file is uploaded only to your own Google Drive account, so you can seamlessly edit your spreadsheet online.
+Editing is available after a quick sign-in:
+ ✦  Continue with Google
+ ✦  Email OTP (get a code by email)
+
+Once enabled, the editor supports key spreadsheet workflows:
+ ✦  Formulas and cell editing
+ ✦  Fonts and basic formatting
+ ✦  Common data formats (numbers, dates, percents, etc.)
+ ✦  Sorting and filtering
+ ✦  Adding images
+ ✦  Without sign-in, you can still view, print, download, and open in Google Sheets.
+
+🕘 Recent files (up to 10)
+
+Open Excel keeps a small list of your recently opened files for quick access. You can remove items individually or clear the list anytime.
+
+🔒 Privacy & data
+
+ ✦  Local by default: files are processed on your device in the browser.
+ ✦  Google Sheets is optional: if you choose “Open in Google Sheets”, the file is uploaded only to your own Google Drive to create a Google Sheet.
+ ✦  We store minimal local settings to display the right UI language.
+
+🛠 How it works
+
+1️⃣ Click the Open Excel icon
+2️⃣ Drag & drop an Excel file (or select it)
+3️⃣ View or enable edit (Google / Email OTP)
+4️⃣Save locally, download .xlsx, print / save as PDF, or open in Google Sheets
 
 🚀 Try it now and make viewing and editing Excel files easier!
