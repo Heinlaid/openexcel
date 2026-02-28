@@ -13,36 +13,112 @@
   </header>
 
   <main class="container">
-    <p><strong>Effective Date: August 2025</strong></p>
+    <p><strong>Effective Date: February 2026</strong></p>
 
     <h2>Overview</h2>
-    <p><strong>Open Excel</strong> is a Chrome extension that lets you view Excel files directly in Chrome and, on demand, upload them to Google Sheets for editing. We are committed to protecting your privacy and ensuring transparency in how data is handled.</p>
+    <p>
+      <strong>Open Excel</strong> is a Chrome extension that lets you open and view Excel files (<code>.xls</code>, <code>.xlsx</code>) directly in Chrome.
+      You can print, download the file, and (after sign-in) edit and locally save changes.
+      Optionally, you can export a file to Google Sheets for editing in your Google account.
+      We are committed to protecting your privacy and ensuring transparency in how data is handled.
+    </p>
 
     <h2>Data Processing</h2>
-    <p>By default, all file processing occurs locally in your browser. No file content leaves your device unless you explicitly choose to upload it to Google Drive via the “Edit in Google Sheets” button.</p>
+    <p>
+      By default, all file processing occurs locally in your browser. <strong>Excel file contents are not sent to our servers</strong>.
+      File content leaves your device only if you explicitly choose to upload it to Google Drive via the
+      “Edit in Google Sheets” button.
+    </p>
+
+    <h3>Local storage on your device</h3>
+    <p>To provide core features, Open Excel stores some data locally in your browser:</p>
+    <ul>
+      <li><strong>Excel file bytes</strong> are stored in the browser’s <strong>IndexedDB</strong> to support “Recent files” and local saving.</li>
+      <li><strong>Recent files list</strong> (metadata like file name and internal file id) and <strong>settings</strong> (e.g., open as tab/popup) are stored in <code>chrome.storage.local</code>.</li>
+      <li><strong>Session state</strong> (to keep you signed in for editing) is stored in <code>chrome.storage.local</code>.</li>
+    </ul>
+    <p>
+      You can remove individual recent items or clear the recent list, which also removes associated cached file data.
+    </p>
+
+    <h2>Account &amp; Authentication (api.openexcel.org)</h2>
+    <p>
+      To enable editing (and local saving), Open Excel offers sign-in methods:
+    </p>
+    <ul>
+      <li><strong>Google sign-in</strong> (via Chrome Identity / OAuth)</li>
+      <li><strong>Email OTP</strong> (a one-time code sent to your email)</li>
+    </ul>
+    <p>When you sign in, we process minimal data needed for authentication and security:</p>
+    <ul>
+      <li><strong>Email address</strong> (identifier)</li>
+      <li><strong>Auth provider</strong> (Google or Email)</li>
+      <li><strong>Optional marketing consent</strong> (only if you choose it)</li>
+      <li><strong>Privacy policy version</strong> (to record which version you accepted)</li>
+      <li><strong>UI language</strong> (to improve your experience)</li>
+      <li><strong>Basic security signals</strong> such as IP address and user agent (used for abuse prevention like OTP rate-limiting)</li>
+    </ul>
+    <p>
+      We do <strong>not</strong> upload Excel file contents to our servers as part of sign-in.
+    </p>
+
+    <h2>Google Sheets (optional)</h2>
+    <p>
+      If you click <strong>“Edit in Google Sheets”</strong>, the extension exports the current workbook and uploads it to <strong>your Google Drive</strong>,
+      converts it to a Google Sheets file (in your account), and opens it on <code>docs.google.com</code>.
+      This upload happens only when you explicitly use this feature.
+    </p>
 
     <h2>Permissions</h2>
     <p>The extension requests the following Chrome permissions:</p>
     <ul>
-      <li><strong>activeTab</strong> — open the viewer interface in the active tab.</li>
-      <li><strong>storage</strong> — remember basic settings, such as zoom level, locally.</li>
-      <li><strong>downloads</strong> — save the current sheet as a PDF.</li>
-      <li><strong>identity</strong> — requested only when you click “Edit in Google Sheets” to authenticate with your Google account.</li>
-      <li><strong>https://www.googleapis.com/*</strong> — used temporarily during upload.</li>
-      <li><strong>drive.file</strong> — requested only after authentication to upload <em>that specific file</em> to your own Drive.</li>
+      <li>
+        <strong>storage</strong> — store local settings, session state, and recent file metadata; and support local saving via cached workbook bytes in IndexedDB.
+      </li>
+      <li>
+        <strong>identity</strong> — authenticate with Google when you sign in with Google and/or export to Google Sheets.
+      </li>
     </ul>
 
-    <h2>drive.file Scope</h2>
-    <p>The <code>drive.file</code> scope is limited to the workbook you actively selected. The extension cannot view, edit, or list any other files in your Google Drive.</p>
+    <p>The extension also uses host permissions to access:</p>
+    <ul>
+      <li><strong>https://accounts.google.com/*</strong> — Google OAuth sign-in flow</li>
+      <li><strong>https://www.googleapis.com/*</strong> — Google APIs (email/user info for sign-in; Drive API for upload when using Google Sheets export)</li>
+      <li><strong>https://docs.google.com/*</strong> — open the exported spreadsheet in Google Sheets</li>
+      <li><strong>https://api.openexcel.org/*</strong> — authentication backend (Email OTP and session)</li>
+    </ul>
+
+    <h3>Google OAuth scopes</h3>
+    <ul>
+      <li><strong>userinfo.email</strong> — used for Google sign-in to retrieve your email address.</li>
+      <li>
+        <strong>drive.file</strong> — requested <strong>only when you click “Edit in Google Sheets”</strong>.
+        This scope is limited to files you create or select with the app and does not provide access to your entire Google Drive.
+      </li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <ul>
+      <li><strong>Local cached files / recent list:</strong> stored locally to support Recent and local save; you can remove items or clear the list at any time.</li>
+      <li><strong>OTP codes:</strong> expire after a short time and are used only to complete sign-in.</li>
+      <li><strong>Sessions:</strong> expire after a limited period; you can log out to clear local session data.</li>
+    </ul>
 
     <h2>Remote Code</h2>
-    <p>The extension ships with all required assets. It does not execute remote code.</p>
+    <p>
+      The extension ships with all required assets and does not execute remote code.
+    </p>
 
     <h2>Changes</h2>
-    <p>We may update this Privacy Policy in the future. Updates will be posted here.</p>
+    <p>
+      We may update this Privacy Policy in the future. Updates will be posted here with a revised effective date.
+    </p>
 
     <h2>Contact</h2>
-    <p>For questions about this policy, email us at <a href="mailto:valmislab.studio@gmail.com">valmislab.studio@gmail.com</a>.</p>
+    <p>
+      For questions about this policy, email us at
+      <a href="mailto:valmislab.studio@gmail.com">valmislab.studio@gmail.com</a>.
+    </p>
   </main>
 
   <footer>
