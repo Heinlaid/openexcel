@@ -13,50 +13,137 @@
   </header>
 
   <main class="container">
-    <p><strong>Effective Date: August&nbsp;2025</strong></p>
+    <p><strong>Effective Date: February&nbsp;2026</strong></p>
 
     <h2>1&nbsp;· Introduction</h2>
-    <p>These Terms of Service (“Terms”) govern your use of the Open&nbsp;Excel Chrome extension (“Service”), provided by OÜ&nbsp;ValmisLab (“we”, “us”, “our”).</p>
+    <p>
+      These Terms of Service (“Terms”) govern your use of the Open&nbsp;Excel Chrome extension (the “Service”),
+      provided by OÜ&nbsp;ValmisLab (“we”, “us”, “our”).
+    </p>
 
     <h2>2&nbsp;· Acceptance</h2>
-    <p>By installing or using the Service you agree to be bound by these Terms. If you do not agree, do not use the Service.</p>
+    <p>
+      By installing or using the Service, you agree to be bound by these Terms.
+      If you do not agree, do not use the Service.
+    </p>
 
     <h2>3&nbsp;· Description of the Service</h2>
-    <p>Open&nbsp;Excel allows you to view .xls/.xlsx files locally in Chrome and, on request, upload the selected file to your own Google&nbsp;Drive for editing in Google&nbsp;Sheets.</p>
+    <p>
+      Open&nbsp;Excel allows you to open and view Excel files (<code>.xls</code>, <code>.xlsx</code>) in Chrome.
+      The Service includes features such as multi-sheet navigation, printing, and downloading/exporting.
+      After sign-in, the Service can enable local editing and local saving (on your device).
+      Optionally, you may export a file to Google Sheets, which uploads the file to your own Google Drive and opens it in Google Sheets.
+    </p>
 
-    <h2>4&nbsp;· Google OAuth &amp; API Scopes</h2>
+    <h2>4&nbsp;· Local Processing, Storage, and User Content</h2>
+    <p>
+      By default, Excel files are processed locally in your browser. You are responsible for the files you open, edit, and export,
+      and for ensuring you have the rights to use them.
+    </p>
+    <p>
+      To provide “Recent files” and local saving, the Service may store file data locally in your browser (e.g., IndexedDB) and store settings/session
+      information in <code>chrome.storage.local</code>. You can remove items from Recent or clear Recent, which removes associated cached data.
+    </p>
+    <p>
+      The Service may attempt compatibility repairs for certain non-standard Excel files (e.g., metadata/styles adjustments)
+      to improve import reliability. Formatting or features (such as images/external links) may not be preserved in all cases.
+    </p>
+
+    <h2>5&nbsp;· Account, Authentication, and Email OTP</h2>
+    <p>
+      Some features (such as local editing and local saving) may require you to sign in.
+      Sign-in options may include Google sign-in and Email OTP (one-time code).
+    </p>
+    <p>
+      If you choose Email OTP, you authorize us to send an authentication code to the email address you provide.
+      Marketing emails are optional and only sent if you explicitly opt in.
+    </p>
+
+    <h2>6&nbsp;· Google OAuth, Google APIs, and Scopes</h2>
+    <p>
+      If you choose Google sign-in or use Google Sheets export, the Service may request Google OAuth authorization.
+      The Service requests only the permissions/scopes necessary for the specific action you choose.
+    </p>
     <ul>
-      <li><code>identity</code> — requested only when you click “Edit&nbsp;in&nbsp;Google&nbsp;Sheets” to authenticate.</li>
-      <li><code>drive.file</code> — permits uploading <em>only the chosen file</em> to your Drive.</li>
+      <li><code>userinfo.email</code> — used for Google sign-in to retrieve your email address.</li>
+      <li>
+        <code>drive.file</code> — requested only when you click “Edit&nbsp;in&nbsp;Google&nbsp;Sheets” to upload the chosen file
+        to your Google Drive and convert/open it as a Google Sheets file.
+      </li>
     </ul>
-    <p><strong>Google API Disclosure.</strong> Our use and transfer of information received from Google APIs will comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>
+      <strong>Google API Disclosure.</strong>
+      Our use and transfer of information received from Google APIs will comply with the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+        Google API Services User Data Policy
+      </a>, including the Limited Use requirements.
+    </p>
 
-    <h2>5&nbsp;· User Rights</h2>
-    <p>We grant you a non-exclusive, revocable licence to use the Service for personal or internal business purposes.</p>
+    <h2>7&nbsp;· Third-Party Services</h2>
+    <p>
+      The Service may interact with third-party services to provide functionality you request, such as Google OAuth/Google Drive/Google Sheets,
+      and an authentication backend endpoint (<code>api.openexcel.org</code>) for session management and Email OTP verification.
+      Your use of third-party services may be subject to their respective terms and policies.
+    </p>
 
-    <h2>6&nbsp;· Prohibited Uses</h2>
-    <p>You may not reverse-engineer, redistribute, or use the Service to violate any law or third-party rights.</p>
+    <h2>8&nbsp;· User Rights</h2>
+    <p>
+      We grant you a non-exclusive, revocable, non-transferable license to use the Service for personal or internal business purposes,
+      subject to these Terms.
+    </p>
 
-    <h2>7&nbsp;· Intellectual Property</h2>
-    <p>All code, trademarks, and logos remain the property of OÜ&nbsp;ValmisLab. No rights are transferred to you.</p>
+    <h2>9&nbsp;· Prohibited Uses</h2>
+    <p>
+      You may not reverse-engineer, redistribute, or use the Service to violate any law, infringe third-party rights,
+      or attempt to bypass security or access controls. You may not use the Service to send abuse traffic (e.g., OTP spam) or interfere with the Service.
+    </p>
 
-    <h2>8&nbsp;· Disclaimer of Warranties</h2>
-    <p>The Service is provided “as is” without warranties of any kind.</p>
+    <h2>10&nbsp;· Intellectual Property</h2>
+    <p>
+      All code, trademarks, and logos remain the property of OÜ&nbsp;ValmisLab (or its licensors).
+      No rights are transferred to you except as expressly stated in these Terms.
+    </p>
 
-    <h2>9&nbsp;· Limitation of Liability</h2>
-    <p>To the fullest extent permitted by law, OÜ&nbsp;ValmisLab shall not be liable for any indirect, incidental, or consequential damages arising from the use of the Service.</p>
+    <h2>11&nbsp;· Disclaimer of Warranties</h2>
+    <p>
+      The Service is provided “as is” and “as available” without warranties of any kind, whether express or implied.
+      We do not warrant that the Service will be uninterrupted or error-free, or that file imports/exports will preserve all formatting in all cases.
+    </p>
 
-    <h2>10&nbsp;· Termination</h2>
-    <p>We may suspend or terminate your access if you breach these Terms.</p>
+    <h2>12&nbsp;· Limitation of Liability</h2>
+    <p>
+      To the fullest extent permitted by law, OÜ&nbsp;ValmisLab shall not be liable for any indirect, incidental, special,
+      consequential, or exemplary damages arising from or related to your use of the Service, including loss of data, profits, or business interruption.
+    </p>
 
-    <h2>11&nbsp;· Governing Law</h2>
-    <p>These Terms are governed by the laws of Estonia. Disputes will be resolved in Harju County Court, Tallinn.</p>
+    <h2>13&nbsp;· Termination</h2>
+    <p>
+      We may suspend or terminate your access to the Service if you breach these Terms or misuse the Service.
+      You may stop using the Service at any time by uninstalling the extension.
+    </p>
 
-    <h2>12&nbsp;· Changes</h2>
-    <p>We may update these Terms. Continued use after changes constitutes acceptance.</p>
+    <h2>14&nbsp;· Privacy</h2>
+    <p>
+      Your use of the Service is also subject to our Privacy Policy. Please review it at
+      <a href="privacy.html">privacy.html</a>.
+    </p>
 
-    <h2>13&nbsp;· Contact</h2>
-    <p>Email: <a href="mailto:valmislab.studio@gmail.com">valmislab.studio@gmail.com</a> · Address: Tornimäe&nbsp;7, 10145&nbsp;Tallinn, Estonia.</p>
+    <h2>15&nbsp;· Governing Law</h2>
+    <p>
+      These Terms are governed by the laws of Estonia. Disputes will be resolved in Harju County Court, Tallinn.
+    </p>
+
+    <h2>16&nbsp;· Changes</h2>
+    <p>
+      We may update these Terms from time to time. Continued use of the Service after changes constitutes acceptance of the updated Terms.
+      Updates will be posted with a revised effective date.
+    </p>
+
+    <h2>17&nbsp;· Contact</h2>
+    <p>
+      Email: <a href="mailto:valmislab.studio@gmail.com">valmislab.studio@gmail.com</a>
+      · Address: Tornimäe&nbsp;7, 10145&nbsp;Tallinn, Estonia.
+    </p>
   </main>
 
   <footer>
