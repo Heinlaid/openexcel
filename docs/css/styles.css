@@ -149,3 +149,161 @@ address{font-style:normal;}
   margin: 3rem auto 2rem;
   padding-top: 3rem;
 }
+
+.page-header{
+  padding:0 1.5rem;
+}
+
+.pricing-header{
+  text-align:center;
+  padding:1rem 1.5rem 0;
+}
+
+.pricing-tagline{
+  max-width:38rem;
+  margin:0 auto 1rem;
+  font-size:1.15rem;
+}
+
+.pricing-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:.75rem;
+}
+
+.pricing-actions .btn{
+  margin:0;
+}
+
+.pricing-cta-note{
+  margin:0 auto;
+  max-width:38rem;
+  font-size:.95rem;
+  color:#555;
+}
+
+.pricing-shell{
+  max-width:1100px;
+  margin:0 auto;
+  padding:1.5rem;
+}
+
+.pricing-grid{
+  display:grid;
+  gap:1.25rem;
+  max-width:900px;
+  margin:1.5rem auto 0;
+}
+
+.plan-card{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  padding-top:3.8rem;
+  box-shadow:none;
+}
+
+.plan-card-featured{
+  border:3px solid var(--accent);
+  box-shadow:none;
+}
+
+.plan-badge{
+  position:absolute;
+  top:1.3rem;
+  left:1.3rem;
+  display:inline-block;
+  padding:.3rem .7rem;
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  font-size:.9rem;
+  font-weight:700;
+}
+
+.plan-price{
+  font-size:2rem;
+  line-height:1.1;
+  margin-bottom:.4rem;
+}
+
+.plan-subtitle{
+  color:#555;
+  margin-bottom:1rem;
+}
+
+.plan-list{
+  margin:0 0 1.2rem;
+  padding-left:1.15rem;
+}
+
+.plan-list li{
+  margin-bottom:.65rem;
+}
+
+.plan-note{
+  color:#555;
+  font-size:.95rem;
+  margin-bottom:1rem;
+}
+
+.plan-actions{
+  margin-top:auto;
+}
+
+.pricing-copy{
+  max-width:900px;
+  margin:1.5rem auto 0;
+}
+
+.pricing-copy h2,
+.pricing-faq{
+  max-width:900px;
+  margin:1.5rem auto 0;
+}
+
+.pricing-copy p:last-child{
+  margin-bottom:0;
+}
+
+.faq-grid{
+  display:grid;
+  gap:1rem;
+  margin-top:1.25rem;
+}
+
+.faq-card h3{
+  margin-bottom:.5rem;
+}
+
+.legal-links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.35rem .8rem;
+  margin-bottom:1rem;
+}
+
+.legal-links a{
+  white-space:nowrap;
+}
+
+.footer-note{
+  max-width:900px;
+  margin:0 auto 1rem;
+}
+
+.muted{
+  color:#555;
+}
+
+@media(min-width:800px){
+  .pricing-grid,
+  .faq-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
